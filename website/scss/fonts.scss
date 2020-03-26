@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DroidSerif";
+    src: url("../fonts/DroidSerif/DroidSerif-BoldItalic.ttf") format("ttf"),
+        url("../fonts/DroidSerif/DroidSerif-BoldItalic.eot") format("eot"),
+        url("../fonts/DroidSerif/DroidSerif-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Courgette', cursive;
+    src: url("../fonts/Courgette/Courgette-Regular.ttf") format("ttf");
+}

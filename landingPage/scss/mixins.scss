@@ -1,0 +1,97 @@
+// container
+@mixin container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@mixin header-navbar-logo-link-style {
+    text-decoration: none;
+    font-family: $font-logo;
+    color: $color-logo;
+    font-size: 40px;
+    line-height: 15px;
+}
+
+@mixin ul-style {
+    list-style-type: none;
+}
+
+@mixin navbar-link-style {
+    text-decoration: none;
+    color: $color-secondary;
+    font-family: $font-main;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: $medium;
+}
+
+@mixin position-absolute-all-0 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin btn-style {
+    display: inline-block;
+    background-color: $color-btn;
+    padding: 24px 52px;
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: $color-secondary;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.4s, transform 0.5s ease;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin btn-hover {
+    background-color: $color-secondary;
+    color: $color-btn;
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 94px -13px rgba(207, 207, 35, 1);
+}
+
+@mixin font ($font-size, $line-height, $font-family, $color, $font-style, $font-weight, $text-transform, $text-align) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-family: $font-family;
+    color: $color;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    text-transform: $text-transform;
+    text-align: $text-align;
+}
+
+@mixin section-head {
+    @include font (40px, 29px, $font-main, $color-primary, $normal, $bold, uppercase, center);
+}
+
+@mixin section-text {
+    @include font (16px, 15px, $font-tertialy, $color-text, $normal, $italic, none, center);
+}
+
+@mixin card-head {
+    @include font (18px, 18px, $font-main, $color-primary, $normal, $bold, none, center);
+}
+
+@mixin card-head2 {
+    @include font (18px, 28px, $font-main, $color-primary, $normal, $bold, none, none);
+}
+
+@mixin card-text {
+    @include font (14px, 20px, $font-secondary, $color-text, $normal, $regular, none, center);
+}
+
+@mixin services-card-img {
+    width: 50px;
+    height: 50px;
+}

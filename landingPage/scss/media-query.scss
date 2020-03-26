@@ -1,0 +1,153 @@
+@media screen and (max-width: 950px) {
+    .portfolio {
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-column-gap: 35px;
+            grid-row-gap: 51px;
+        }
+
+        &__header {
+            margin: 60px 0;
+        }
+
+    }
+
+    .content {
+        justify-content: center;
+
+        &__info {
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+
+        &__img {
+            flex-grow: 1;
+        }
+    }
+
+    .footer {
+        &__header {
+            margin-top: 30px;
+        }
+    }
+
+    .form {
+        flex-flow: column;
+
+        &__input {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .header-main__head-big {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .header-main__head-big {
+        flex-basis: 157px;
+    }
+
+    .navbar {
+        &__menu {
+            display: none;
+        }
+
+        .toggler {
+            visibility: visible;
+
+            &__navbar {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .toggler__input:checked+.toggler__navbar {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .services {
+        &__cards {
+            flex-flow: column;
+
+            .card {
+                margin: 20px 0;
+            }
+        }
+
+        &__header {
+            margin: 60px;
+        }
+    }
+
+    .portfolio {
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-column-gap: 35px;
+            grid-row-gap: 51px;
+            margin-bottom: 60px;
+        }
+
+        &__header {
+            margin: 60px 0;
+        }
+    }
+
+    .team {
+
+        &__container {
+            margin: 40px 0;
+        }
+
+        &__participants {
+            flex-flow: column;
+        }
+    }
+
+    .participant-card {
+        min-height: 400px;
+        justify-content: space-evenly;
+    }
+
+    .form {
+
+        width: 100%;
+        align-items: center;
+
+        &__input {
+            width: 100%;
+            align-self: center;
+        }
+
+        &__name,
+        &__mail,
+        &__subject {
+            width: 100%;
+            margin-right: 0 !important;
+        }
+
+        &__textarea {
+            width: 80%;
+            align-self: center;
+
+            textarea {
+                width: 100%;
+            }
+        }
+
+    }
+}
